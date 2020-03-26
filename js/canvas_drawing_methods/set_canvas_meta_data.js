@@ -21,9 +21,9 @@ class setCanvasMetaData {
     setHeight() {
         const el = document.getElementById(this.idName)
         el.width = el.offsetWidth;
-        el.height = el.width
+        el.height = el.width;
 
-        this.width = el.width
-        this.height = el.height
+        this.width = el.width;
+        this.height = el.height;
     }
 }
