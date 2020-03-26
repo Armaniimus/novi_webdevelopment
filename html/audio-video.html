@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="nl" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>audio - video</title>
+        <title>Audio - video</title>
         <link rel="stylesheet" href="../css/default-styles.css">
     </head>
     <body>
@@ -12,6 +12,24 @@
                 <li><a href="../index.html">Back to home</a></li>
             </ul>
         </nav>
+
+        <h4>Audio</h4>
+        <audio controls>
+            <source src="../assets/sound/godfather.mp3" type="audio/mpeg">
+            <source src="../assets/sound/godfather.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h4>html video</h4>
+        <video width="320" height="240" controls>
+            <source src="../assets/video/godfather.mp4" type="video/mp4">
+            <source src="../assets/video/godfather.webm" type="video/webm">
+            <source src="../assets/video/godfather.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+
+        <h4>youtube include</h4>
+        <iframe width="899" height="506" src="https://www.youtube.com/embed/X-jdl9hcCeg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     </body>
 </html>

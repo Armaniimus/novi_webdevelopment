@@ -1,75 +1,75 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <link rel="stylesheet" href="../css/grid-v1.5.css">
-    <link rel="stylesheet" href="../css/kleurwiel.css">
-</head>
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+    <head>
+        <link rel="stylesheet" href="../css/grid-v1.5.css">
+        <link rel="stylesheet" href="../css/kleurwiel.css">
+    </head>
 
-<body class="col-xs-12">
-    <h1>Kleurwiel</h1>
-    <nav id="main-nav">
-        <ul>
-            <li><a href="../index.html">Back to home</a></li>
-        </ul>
-    </nav>
+    <body class="col-xs-12">
+        <h1>Kleurwiel</h1>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="../index.html">Back to home</a></li>
+            </ul>
+        </nav>
 
 
-    <main class="col-12 col-md-12">
-        <div class="col-12 col-md-12">
-            <div class="buttonconstainer row">
-                <div class="float col-2"><br></div>
-                <div class="float col-8">
+        <main class="col-12 col-md-12">
+            <div class="col-12 col-md-12">
+                <div class="buttonconstainer row">
+                    <div class="float col-2"><br></div>
+                    <div class="float col-8">
 
-                    <div class="float buttonGroup">
-                        <button type="" name="button" onclick="handleRotate()">Rotate start/stop</button><br>
-                        <button type="" name="button" onclick="switchRotate()">Switch rotation direction</button>
+                        <div class="float buttonGroup">
+                            <button type="" name="button" onclick="handleRotate()">Rotate start/stop</button><br>
+                            <button type="" name="button" onclick="switchRotate()">Switch rotation direction</button>
+                        </div>
+
+                        <div class="float buttonGroup">
+                            <button type="" name="button" onclick="makeWhite()">Make White ...</button><br>
+                            <input type="number" id="partID" name="" value="0" min="0" max="47">
+                        </div>
+
+                        <div class="float buttonGroup">
+                            <button type="button" name="button" onclick="reset()">Reset</button>
+                        </div>
                     </div>
-
-                    <div class="float buttonGroup">
-                        <button type="" name="button" onclick="makeWhite()">Make White ...</button><br>
-                        <input type="number" id="partID" name="" value="0" min="0" max="47">
-                    </div>
-
-                    <div class="float buttonGroup">
-                        <button type="button" name="button" onclick="reset()">Reset</button>
-                    </div>
+                    <div class="float col-2"><br></div>
                 </div>
-                <div class="float col-2"><br></div>
+
+                <div class="row canvascontainer">
+                    <div class="float col-2"><br></div>
+                    <canvas style="border:1px black solid;" id="colorWheel" class="float col-8"></canvas> <!--height is 100%-->
+                    <div class="float col-2"><br></div>
+                </div>
             </div>
+        </main>
 
-            <div class="row canvascontainer">
-                <div class="float col-2"><br></div>
-                <canvas style="border:1px black solid;" id="colorWheel" class="float col-8"></canvas> <!--height is 100%-->
-                <div class="float col-2"><br></div>
-            </div>
-        </div>
-    </main>
+        <!-- include calcMethods -->
+        <script type="text/javascript" src="../js/canvas_drawing_methods/calcMethods.js"></script>
 
-    <!-- include calcMethods -->
-    <script type="text/javascript" src="../js/canvas_drawing_methods/calcMethods.js"></script>
+        <!-- include hexcode_translation_methods -->
+        <script type="text/javascript" src="../js/hexcodes_translation_methods.js"></script>
 
-    <!-- include hexcode_translation_methods -->
-    <script type="text/javascript" src="../js/hexcodes_translation_methods.js"></script>
+        <!-- setCanvasMetaData -->
+        <script type="text/javascript" src="../js/canvas_drawing_methods/set_canvas_meta_data.js"></script>
 
-    <!-- setCanvasMetaData -->
-    <script type="text/javascript" src="../js/canvas_drawing_methods/set_canvas_meta_data.js"></script>
+        <!-- include canvas_drawing_methods -->
+        <script type="text/javascript" src="../js/canvas_drawing_methods/draw_triangle.js"></script>
+        <script type="text/javascript" src="../js/canvas_drawing_methods/draw_rectangle.js"></script>
+        <script type="text/javascript" src="../js/canvas_drawing_methods/draw_simple_polygon.js"></script>
 
-    <!-- include canvas_drawing_methods -->
-    <script type="text/javascript" src="../js/canvas_drawing_methods/draw_triangle.js"></script>
-    <script type="text/javascript" src="../js/canvas_drawing_methods/draw_rectangle.js"></script>
-    <script type="text/javascript" src="../js/canvas_drawing_methods/draw_simple_polygon.js"></script>
+        <!-- round shapes -->
+        <script type="text/javascript" src="../js/canvas_drawing_methods/draw_circlepiece.js"></script>
+        <script type="text/javascript" src="../js/canvas_drawing_methods/draw_piepiece.js"></script>
 
-    <!-- round shapes -->
-    <script type="text/javascript" src="../js/canvas_drawing_methods/draw_circlepiece.js"></script>
-    <script type="text/javascript" src="../js/canvas_drawing_methods/draw_piepiece.js"></script>
+        <!-- drawwords -->
+        <script type="text/javascript" src="../js/canvas_drawing_methods/draw_clocklikeword.js"></script>
 
-    <!-- drawwords -->
-    <script type="text/javascript" src="../js/canvas_drawing_methods/draw_clocklikeword.js"></script>
+        <!-- colorWheel specific files -->
+        <script type="text/javascript" src="../js/color_wheel/initialData.js"></script>
+        <script type="text/javascript" src="../js/color_wheel/render.js"></script>
+        <script type="text/javascript" src="../js/color_wheel/animations.js"></script>
 
-    <!-- colorWheel specific files -->
-    <script type="text/javascript" src="../js/color_wheel/initialData.js"></script>
-    <script type="text/javascript" src="../js/color_wheel/render.js"></script>
-    <script type="text/javascript" src="../js/color_wheel/animations.js"></script>
-
-</body>
+    </body>
 </html>
