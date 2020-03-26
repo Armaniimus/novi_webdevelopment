@@ -1,0 +1,50 @@
+.tabs-container {
+    margin-top: 30px;
+}
+
+.tabs-container .tabs {
+    padding: 0px;
+}
+
+.tabs:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.tabs-container .tabs li {
+    float: left;
+    list-style: none;
+    margin-top: 1px;
+    margin-bottom: -2px;
+}
+
+.tabs-container .tabs li a {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px 5px 0px 0px;
+    border: solid grey 1px;
+    text-decoration: none;
+    color: black;
+}
+
+.tabs-container .tabs li a.active,
+.tabs-container .tabs li a:hover,
+.tabs-container .tabs li a:focus {
+    background-color: #007fff;
+    color: white;
+}
+
+.tabs-container .tab-panes {
+    border: solid grey 1px;
+    border-radius: 3px;
+}
+
+.tabs-container .tab-panes li {
+    list-style: none;
+    display: none;
+}
+
+.tabs-container .tab-panes li.active {
+    display: block;
+}
