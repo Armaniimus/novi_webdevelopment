@@ -1,0 +1,25 @@
+.img-row {
+    padding: 60px;
+}
+
+.img,
+.img-background {
+    margin-top: 30px;
+}
+
+
+.img > img,
+.img-background > div {
+    max-width: 50vw;
+    width: 60%;
+    position: relative;
+    left: 0;
+    transform: translatex(calc(50% - 30%) );
+}
+
+.img-background > div {
+    background-image: url("../assets/images/the_fields.jpg");
+    background-size: cover;
+    height: 100px;
+    width: 100%;
+}

@@ -4,17 +4,31 @@
         <meta charset="utf-8">
         <title>Images - svg</title>
         <link rel="stylesheet" href="../css/default-styles.css">
+        <link rel="stylesheet" href="../css/grid-v1.5.css">
+        <link rel="stylesheet" href="../css/images.css">
     </head>
     <body>
-        <h1>Images - svg</h1>
-        <nav id="main-nav">
-            <ul>
-                <li><a href="../index.html">Back to home</a></li>
-            </ul>
-        </nav>
+        <header>
+            <h1>Images - svg</h1>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="../index.html">Back to home</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <img width="500" height="500" src="../assets/images/head.png" alt="">
-        <img width="500" height="500" src="../assets/images/bunny.svg" alt="">
+        <main class="row img-row">
+            <div class="img col-12 col-md-6">
+                <img src="../assets/images/head.png" alt="">
+            </div>
 
+            <div class="img col-12 col-md-6">
+                <img src="../assets/images/bunny.svg" alt="">
+            </div>
+
+            <div class="img-background col-12 col-md-6">
+                <div id="third-image"></div>
+            </div>
+        </main>
     </body>
 </html>
