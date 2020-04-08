@@ -6,7 +6,6 @@
         <link rel="stylesheet" href="../css/default-styles.css">
         <link rel="stylesheet" href="../css/grid-v1.5.css">
         <link rel="stylesheet" href="../css/form.css">
-        <script src="../js/form_verwerking.js"></script>
     </head>
 
     <body>
@@ -25,12 +24,23 @@
         </header>
 
         <main>
-            <div>
-                <p>De gebruiker heeft de volgende informatie verstuurd</p><br>
-                <p>Naam: <script>document.write(GET('naam'));</script></p>
-                <p>E-mail: <script>document.write(GET('email'));</script></p>
-                <p>Geboortedatum: <script>document.write(GET('geboorte'));</script></p>
-            </div>
+            <p>De gebruiker heeft de volgende informatie verstuurd</p><br>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Naam</th>
+                        <th>E-mail</th>
+                        <th>Geboortedatum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="naam"></td>
+                        <td id="email"></td>
+                        <td id="geboorte"></td>
+                    </tr>
+                </tbody>
+            </table>
             <br>
 
             <div class="">
@@ -46,7 +56,8 @@
 
                 <p>Naar deze pagina wordt ook vanuit de home gelinkt dit is omdat de eindopdracht hier specifiek om vraagt dit zou je in praktijk nooit doen</p>
             </div>
-
         </main>
+
+        <script src="../js/form_verwerking.js"></script>
     </body>
 </html>
