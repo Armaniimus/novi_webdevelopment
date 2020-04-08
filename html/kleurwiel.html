@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="../css/kleurwiel.css">
     </head>
 
-    <body class="col-xs-12">
+    <body class="col-12">
         <header class="row">
             <h1 class="col-6 col-sm-3">Kleurwiel</h1>
             <nav id="main-nav" class="col-6 col-sm-9 clearfix">
@@ -18,35 +18,40 @@
             </nav>
         </header>
 
-        <main class="col-12 col-md-12">
+        <main class="row">
             <div class="col-12 col-md-12">
-                <div class="buttonconstainer row">
-                    <div class="float col-2"><br></div>
-                    <div class="float col-8">
 
-                        <div class="float buttonGroup">
-                            <button type="" name="button" onclick="handleRotate()">Rotate start/stop</button><br>
-                            <button type="" name="button" onclick="switchRotate()">Switch rotation direction</button>
+                <div class="buttonconstainer row">
+                    <div class="row">
+                        <div class="col-auto buttonGroup">
+                            <button type="" name="button" onclick="handleRotate()">Rotate</button><br>
+                            <button type="" name="button" onclick="switchRotate()">Change rotation</button>
                         </div>
 
-                        <div class="float buttonGroup">
+                        <div class="col-auto buttonGroup">
                             <button type="" name="button" onclick="makeWhite()">Make White ...</button><br>
                             <input type="number" id="partID" name="" value="0" min="0" max="47">
                         </div>
 
-                        <div class="float buttonGroup">
+                        <div class="col-auto buttonGroup">
                             <button type="button" name="button" onclick="reset()">Reset</button>
                         </div>
                     </div>
-                    <div class="float col-2"><br></div>
                 </div>
 
                 <div class="row canvascontainer">
-                    <div class="float col-2"><br></div>
-                    <canvas style="border:1px black solid;" id="colorWheel" class="float col-8"></canvas> <!--height is 100%-->
-                    <div class="float col-2"><br></div>
+                    <canvas style="border:1px black solid;" id="colorWheel" class="col-12"></canvas> <!--height is 100%-->
                 </div>
             </div>
+
+            <div>
+                <h4>uitleg</h4>
+                <p>De knop makeWhite maakt een veld wit die gespecificeerd wordt met het inputveld eronder.</p>
+                <p>De knop rotate start of stopt het ronddraaien van het wiel wiel.</p>
+                <p>De ronddraai richting kan je wisselen met de Change rotation knop.</p>
+                <p>Tot slot kan je alles weer resetten naar orginele staat met de reset knop</p>
+            </div>
+
         </main>
 
         <!-- include calcMethods -->
