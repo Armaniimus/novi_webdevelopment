@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>FormVerwerking</title>
+        <link rel="stylesheet" href="../css/default-styles.css">
+        <link rel="stylesheet" href="../css/grid-v1.5.css">
+        <link rel="stylesheet" href="../css/form.css">
+        <script src="../js/form_verwerking.js"></script>
+    </head>
+
+    <body>
+        <header class="row">
+            <h1 class="col-6 col-sm-3">FormVerwerking</h1>
+            <nav id="main-nav" class="col-6 col-sm-9 clearfix">
+                <ul class="row float-right">
+                    <li class="col-auto"><a href="../index.html">Back to home</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div>
+                <p>De gebruiker heeft de volgende informatie verstuurd</p><br>
+                <p>Naam: <script>document.write(GET('naam'));</script></p>
+                <p>E-mail: <script>document.write(GET('email'));</script></p>
+                <p>Geboortedatum: <script>document.write(GET('geboorte'));</script></p>
+            </div>
+            <br>
+
+            <div class="">
+                <h4>Opmerkingen</h4>
+                <p>
+                    Ik heb voor de huidige methode gekozen omdat dit het makkelijkst is om met javascript te voltooien.
+                    Aangezien javaFX niet een taal is waar we als cursist veel tijd voorkrijgen en php als taal afgeraden werd heb ik de formulier verwerking zo opgelost.
+                    Als dit om echte gebruikers info gaat mag je natuurlijk nooit een get request gebruiken maar moet je natuurlijk ook de data valideren op front en backend. en moet je het sanitizen op de backend.
+                    Dit ligt allebij een beetje buiten de scope van wat we in de theorie geleerd kregen en leek me voor deze eind opdracht niet nodig.
+                </p>
+            </div>
+
+        </main>
+    </body>
+</html>
