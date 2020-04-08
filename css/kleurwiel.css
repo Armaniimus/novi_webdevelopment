@@ -1,7 +1,14 @@
 .buttonGroup {
-    padding: 15px;
+    padding-left: 15px;
+    padding-right: 0px;
 }
 
 #colorWheel {
-    max-height: 75vw;
+    max-width: calc(100vh - 150px);
+}
+
+.buttonconstainer,
+.canvascontainer {
+    margin-left: calc(100% / 6);
+    margin-right: calc(100% / 6);
 }
