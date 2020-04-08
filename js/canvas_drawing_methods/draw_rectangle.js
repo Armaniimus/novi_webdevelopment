@@ -1,3 +1,9 @@
+/*
+    Leerlijn: webdevelopment
+    Docent: Frits Bosschert
+    Student: Armand van Alphen
+ */
+
 class DrawRectangle {
     constructor(startX, startY, height, width, color) {
         this.x = startX;

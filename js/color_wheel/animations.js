@@ -1,3 +1,9 @@
+/*
+    Leerlijn: webdevelopment
+    Docent: Frits Bosschert
+    Student: Armand van Alphen
+ */
+
 class RotateWheel {
     constructor() {
         this.clockwise = 1;

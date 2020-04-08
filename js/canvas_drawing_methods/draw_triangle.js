@@ -1,3 +1,9 @@
+/*
+    Leerlijn: webdevelopment
+    Docent: Frits Bosschert
+    Student: Armand van Alphen
+ */
+
 class DrawTriangle {
     constructor(x, y, angleA, sideAC, sideAB, rotation, color) {
         this.x = x;

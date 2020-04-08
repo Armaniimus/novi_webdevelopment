@@ -1,3 +1,9 @@
+/*
+    Leerlijn: webdevelopment
+    Docent: Frits Bosschert
+    Student: Armand van Alphen
+ */
+
 class convertHexCodes {
     constructor(hex) {
         this.setHex(hex)

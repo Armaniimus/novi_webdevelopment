@@ -1,3 +1,9 @@
+/*
+    Leerlijn: webdevelopment
+    Docent: Frits Bosschert
+    Student: Armand van Alphen
+ */
+
 console.log( $( ".tabs-container .tabs" ) );
 
 $( ".tabs-container .tabs" ).click(function() {

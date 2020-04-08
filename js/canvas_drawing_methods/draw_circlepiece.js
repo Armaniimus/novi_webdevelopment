@@ -1,3 +1,9 @@
+/*
+    Leerlijn: webdevelopment
+    Docent: Frits Bosschert
+    Student: Armand van Alphen
+ */
+
 // function drawArcs(array) {
 class DrawCirclePiece {
     constructor(x, y, radius, thickness, startAngle, endAngle){

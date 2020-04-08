@@ -8,6 +8,11 @@
     </head>
 
     <body>
+        <!--
+            Leerlijn: webdevelopment
+            Docent: Frits Bosschert
+            Student: Armand van Alphen
+        -->
         <header class="row">
             <h1 class="col-6 col-sm-3">Media</h1>
             <nav id="main-nav" class="col-6 col-sm-9 clearfix">
@@ -17,24 +22,30 @@
             </nav>
         </header>
 
-        <main>
-            <h4>Audio</h4>
-            <audio controls>
-                <source src="../assets/sound/godfather.mp3" type="audio/mpeg">
-                <source src="../assets/sound/godfather.ogg" type="audio/ogg">
-                Your browser does not support the audio element.
-            </audio>
+        <main class="row">
+            <div class="col-12 col-sm-6">
+                <h4>Audio</h4>
+                <audio controls>
+                    <source src="../assets/sound/godfather.mp3" type="audio/mpeg">
+                    <source src="../assets/sound/godfather.ogg" type="audio/ogg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
 
-            <h4>html video</h4>
-            <video width="320" height="240" controls>
-                <source src="../assets/video/godfather.mp4" type="video/mp4">
-                <source src="../assets/video/godfather.webm" type="video/webm">
-                <source src="../assets/video/godfather.ogg" type="video/ogg">
-                Your browser does not support the video tag.
-            </video>
+            <div class="col-12 col-sm-6">
+                <h4>Html video</h4>
+                <video width="320" height="240" controls>
+                    <source src="../assets/video/godfather.mp4" type="video/mp4">
+                    <source src="../assets/video/godfather.webm" type="video/webm">
+                    <source src="../assets/video/godfather.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
 
-            <h4>youtube include</h4>
-            <iframe width="899" height="506" src="https://www.youtube.com/embed/X-jdl9hcCeg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="col-12 col-sm-6">
+                <h4>Youtube include</h4>
+                <iframe style="border: 0px; max-width: 50vw;" src="https://www.youtube.com/embed/X-jdl9hcCeg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </main>
     </body>
 </html>

@@ -1,3 +1,9 @@
+/*
+    Leerlijn: webdevelopment
+    Docent: Frits Bosschert
+    Student: Armand van Alphen
+ */
+
 class DrawClockLikeWords {
     constructor(array, x, y, radius, startAngle, fontSize) {
         this.array = array;

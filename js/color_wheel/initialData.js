@@ -1,3 +1,9 @@
+/*
+    Leerlijn: webdevelopment
+    Docent: Frits Bosschert
+    Student: Armand van Alphen
+ */
+
 //global non specific vars
 const canvas = new setCanvasMetaData("colorWheel");
 const ctx = canvas.ctx;

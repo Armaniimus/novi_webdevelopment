@@ -1,3 +1,9 @@
+/*
+    Leerlijn: webdevelopment
+    Docent: Frits Bosschert
+    Student: Armand van Alphen
+ */
+
 function GetOffsetY( elem ) {
     if ( document.getElementById ) {
         elem = document.getElementById ( elem );
@@ -63,7 +69,7 @@ function calcRadius(aX, aY, bX, bY) {
     } else {
         cY = Math.pow( (aY - bY), 2)// * (aY - bY)
     }
-    
+
     return ( Math.sqrt(cX + cY) );
 }
 

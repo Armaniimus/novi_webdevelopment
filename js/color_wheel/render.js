@@ -1,3 +1,9 @@
+/*
+    Leerlijn: webdevelopment
+    Docent: Frits Bosschert
+    Student: Armand van Alphen
+ */
+
 function RenderCanvas() {
     canvas.render()
     ctx.clearRect(0, 0, canvas.width, canvas.height);

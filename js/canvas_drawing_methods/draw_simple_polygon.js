@@ -1,3 +1,9 @@
+/*
+    Leerlijn: webdevelopment
+    Docent: Frits Bosschert
+    Student: Armand van Alphen
+ */
+
 class draw_simplePolygon {
     constructor(radius, rotation, x, y, corners) {
         this.fillColor = "#000";

@@ -1,3 +1,9 @@
+/*
+    Leerlijn: webdevelopment
+    Docent: Frits Bosschert
+    Student: Armand van Alphen
+ */
+
 function GET(VarSearch){
     var SearchString = window.location.search.substring(1);
     var VariableArray = SearchString.split('&');
@@ -8,6 +14,4 @@ function GET(VarSearch){
             return KeyValuePair[1];
         }
     }
-
-
 }
