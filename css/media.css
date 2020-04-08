@@ -4,6 +4,11 @@
     Student: Armand van Alphen
  */
 
-.youtubeVideo {
+.youtube-video {
     border: 0px; max-width: 50vw;
+}
+
+.regular-video {
+    max-width: 50vw;
+    width: 90%;
 }
