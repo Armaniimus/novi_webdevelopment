@@ -10,13 +10,17 @@
 }
 
 
-.img > img,
-.img-background > div {
+.img > img {
     max-width: 50vw;
-    width: 60%;
     position: relative;
+    width: 50%;
     left: 0;
-    transform: translatex(calc(50% - 30%) );
+    transform: translatex(calc(100% - 75%) );
+}
+
+.img > svg {
+    height: 40vw;
+    position: relative;
 }
 
 .img-background > div {
