@@ -11,6 +11,7 @@
 
 #colorWheel {
     max-width: calc(100vh - 150px);
+    border:1px black solid
 }
 
 .buttonconstainer,
